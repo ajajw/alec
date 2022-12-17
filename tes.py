@@ -19,7 +19,7 @@ elif is_on != "is_on":
     exit(0)
 
 
-chat_scraped = ['@CodeNostra_Group', '@ChkBotLand', '@official_xforce', '@darkachat', '@ccasiaworld', '@xfoxa', '@xforce_group8', '@savagegroupoficial', '@binsofolimpus', '@Katsukifujiwarachk']
+chat_scraped = ['CodeNostra_Group', 'ChkBotLand', 'official_xforce', 'darkachat', 'ccasiaworld', 'xfoxa', 'xforce_group8', 'savagegroupoficial', 'binsofolimpus', 'Katsukifujiwarachk']
 
 posting_channel = -1001538283887
 parse_mode = 'html'
