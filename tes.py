@@ -21,7 +21,7 @@ elif is_on != "is_on":
 
 chat_scraped = ['CodeNostra_Group', 'ChkBotLand', 'official_xforce', 'darkachat', 'ccasiaworld', 'xfoxa', 'xforce_group8', 'savagegroupoficial', 'binsofolimpus', 'Katsukifujiwarachk', -1001174204744, -1001237062995, -1001384666786, -1001537198434]
 
-posting_channel = -1001700883816
+posting_channel = -1001538283887
 parse_mode = 'html'
 file_db = 'text.txt'
 
@@ -84,17 +84,17 @@ for chat in chat_scraped:
 
                 lunh = verify(x.split("|")[0])
 
-                extra = x[0:12]
+                extra = x[0:0+12]
                                
                 bin = x[0:6]
                                                                
-                bin_data = requests.get('https://josep.alwaysdata.net/Issei/lookup.php?bin='+ x.split("|")[0][0:6]).json()
-                country = bin_data['info']['country']
-                flag = bin_data['info']['flag']
-                vendor = bin_data['info']['brand']
-                tipo = bin_data['info']['type']
-                level = bin_data['info']['level']
-                bank_name = bin_data['info']['bank']                                                     
+                bin_data = requests.get('https://www.binapi.co.uk/bin='+ x.split("|")[0][0:6]).json()
+                country = bin_data['country']
+                flag = bin_data['flag']
+                vendor = bin_data['brand']
+                tipo = bin_data['type']
+                level = bin_data['level']
+                bank_name = bin_data['bank']                                                     
 
                 explode = x.split('|')
                 cc = explode[0] 
