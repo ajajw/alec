@@ -27,9 +27,9 @@ file_db = 'text.txt'
 
 api_id = 20817172
 api_hash = '7cff6f37eb1c4a378eacf2f5145cf950'
-    print(Fore.LIGHTCYAN_EX + "\nIf you want to change your API delete api.txt.")
-    ewdewde = input("\nPress enter to continue.")
-    os.system('clear || cls')
+print(Fore.LIGHTCYAN_EX + "\nIf you want to change your API delete api.txt.")
+ewdewde = input("\nPress enter to continue.")
+os.system('clear || cls')
 print("Imputing S3xyDatabase..")
 
 for chat in chat_scraped:
