@@ -21,7 +21,7 @@ elif is_on != "is_on":
 
 chat_scraped = ['@CodeNostra_Group', '@ChkBotLand', '@official_xforce', '@darkachat', '@ccasiaworld', '@xfoxa', '@xforce_group8', '@savagegroupoficial', '@binsofolimpus', '@Katsukifujiwarachk']
 
-posting_channel = @staikergodholaquehacemibb
+posting_channel = -1001538283887
 parse_mode = 'html'
 file_db = 'text.txt'
 
