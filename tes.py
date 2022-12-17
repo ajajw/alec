@@ -25,30 +25,8 @@ posting_channel = @staikergodholaquehacemibb
 parse_mode = 'html'
 file_db = 'text.txt'
 
-
-try:
-    file = open('api.txt','r')
-    apis = file.readlines()
-except:
-    file = open('api.txt','w')
-    file.close()
-    file = open('api.txt','r')
-    apis = file.readlines()
-if apis == []:
-    api_id = int(input("APIID : "))
-    api_hash = input("APIHASH : ")
-    api_id = int(str(api_id).replace(' ',''))
-    api_hash = api_hash.replace(' ','')
-    file = open('api.txt', 'w')
-    file.write(str(api_id) + '\n' + api_hash)
-    file = file.close()
-    ewdewde = input("\nPress enter to continue.")
-    os.system('clear || cls')    
-elif len(apis) == 2:
-    api_id = int(apis[0])
-    api_hash = apis[1]
-    print ("APIID : " + str(api_id))
-    print ("APIHASH : " + api_hash) 
+api_id = 20817172
+api_hash = '7cff6f37eb1c4a378eacf2f5145cf950'
     print(Fore.LIGHTCYAN_EX + "\nIf you want to change your API delete api.txt.")
     ewdewde = input("\nPress enter to continue.")
     os.system('clear || cls')
