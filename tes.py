@@ -19,18 +19,18 @@ elif is_on != "is_on":
     exit(0)
 
 
-chat_scraped = ['CodeNostra_Group', 'ChkBotLand', 'official_xforce', 'darkachat', 'ccasiaworld', 'xfoxa', 'xforce_group8', 'savagegroupoficial', 'binsofolimpus', 'Katsukifujiwarachk']
+chat_scraped = [''] # Chats para scrapear ejem: '{aliasdelgrupo}'
 
-posting_channel = -1001538283887
+posting_channel = -1001538283887 # Canal donde se postearan las ccs
 parse_mode = 'html'
 file_db = 'text.txt'
 
-api_id = 20817172
-api_hash = '7cff6f37eb1c4a378eacf2f5145cf950'
-print(Fore.LIGHTCYAN_EX + "\nIf you want to change your API delete api.txt.")
-ewdewde = input("\nPress enter to continue.")
+api_id = 20817172 #api id
+api_hash = '7cff6f37eb1c4a378eacf2f5145cf950' #api hash
+print(Fore.Diegopro Elimina el api.txt ;3")
+ewdewde = input("\n Presiona enter para continuar bb \n")
 os.system('clear || cls')
-print("Imputing S3xyDatabase..")
+print("Imputing Diegoplo..")
 
 for chat in chat_scraped:
     with TelegramClient('scraper', api_id, api_hash) as client:
@@ -81,19 +81,16 @@ for chat in chat_scraped:
                 cvv = explode[3]
 
 
-                card_send_formatted = f'''
-ㅤㅤㅤ𝐍𝐞𝐰 𝐄𝐱𝐭𝐫𝐚! 鰲 (<code>#{bin}</code> ♻️)
-[你] 𝐄𝐱𝐭𝐫𝐚 → <code>{extra}xxxx|{mes}|{ano}|rnd</code>
-[為] 𝐁𝐢𝐧 → <code>{vendor} - {tipo} - {level} - {country} => ({flag})</code>
-[奧] 𝐁𝐚𝐧𝐤 → <code>{bank_name}</code>
-@ApiSites | @S3xyAlec
+                texto_bb = f'''
+◆ ▬▬▬▬▬ ❴✪❵ ▬▬▬▬▬ ◆                                      ╟ 点 𝙸𝚋𝚊𝚒 𝚂𝚌𝚛𝚊𝚙𝚙𝚎𝚛 点◆ ▬▬▬▬▬ ❴✪❵ ▬▬▬▬▬ ◆╟ [🝂] 𝗟𝗶𝘃𝗲 🟢:╟ — `{cc}|{mes}|{ano}|{cvv}`╟ [🝂] 𝗜𝗻𝗳𝗼 :╟ 🔎 {bin_json['brand']} - {bin_json['type']} - {bin_json['level']}╟ 🏦 `{bin_json['bank']}`╟ 🌐 `{bin_json['country']} - {bin_json['code']} - {bin_json['flag']}`◆ ▬▬▬▬▬ ❴✪❵ ▬▬▬▬▬ ◆╟ [🝂] 𝗘𝘅𝘁𝗿𝗮 : `{extra}xxxx|{mes}|{ano}|rnd`╟ [🝂] 𝙊𝙬𝙣𝙚𝙧𝙨 : @straiker & @DiegoAkk◆ ▬▬▬▬▬ ❴✪❵ ▬▬▬▬▬ ◆
+    
 '''
 
 
-                print(f'S3xyDrops V1.0\n   Card => {cc}\n    Date => {mes}/{ano}\n     Cvv => {cvv}\n       Author => @S3xyAlec\n\n')
+                print(f'DiegoPro\n   Card => {cc}\n    Date => {mes}/{ano}\n     Cvv => {cvv}\n       Author => @S3xyAlec\n\n')
                 if lunh is True:
                         time.sleep(8)
-                        client.send_message(posting_channel, card_send_formatted)
+                        client.send_message(posting_channel, texto_bb)
                         f = open(file_db, 'a')
                         f.write(f"{x}\n")
                         f.close()
