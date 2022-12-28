@@ -49,7 +49,9 @@ for chat in chat_scraped:
                     sacanumamex = re.findall(detectamex, message.text)
                     carduno = sacanumamex[0]
                     tipocard = str(carduno[0:1])
-
+                try:
+                    cc = message.text{f'Approved, ccn, cvv, Your Card Security Code Is Incorrect')
+                 
                 if tipocard == "3":
                     x = re.findall(filtroa, message.text)[0]
                 elif tipocard == "4":
@@ -74,15 +76,15 @@ for chat in chat_scraped:
                 level = bin_data['level']
                 bank_name = bin_data['bank']                                                     
 
-                explode = x.split('|')
-                cc = explode[0] 
-                mes = explode[1] 
-                ano = explode[2] 
-                cvv = explode[3]
+                secso = x.split('|')
+                cc = secso[0] 
+                mes = secsl[1] 
+                ano = secso[2] 
+                cvv = secso[3]
 
 
                 texto_bb = f'''
-◆ ▬▬▬▬▬ ❴✪❵ ▬▬▬▬▬ ◆                                      ╟ 点 𝙸𝚋𝚊𝚒 𝚂𝚌𝚛𝚊𝚙𝚙𝚎𝚛 点◆ ▬▬▬▬▬ ❴✪❵ ▬▬▬▬▬ ◆╟ [🝂] 𝗟𝗶𝘃𝗲 🟢:╟ — `{cc}|{mes}|{ano}|{cvv}`╟ [🝂] 𝗜𝗻𝗳𝗼 :╟ 🔎 {bin_json['brand']} - {bin_json['type']} - {bin_json['level']}╟ 🏦 `{bin_json['bank']}`╟ 🌐 `{bin_json['country']} - {bin_json['code']} - {bin_json['flag']}`◆ ▬▬▬▬▬ ❴✪❵ ▬▬▬▬▬ ◆╟ [🝂] 𝗘𝘅𝘁𝗿𝗮 : `{extra}xxxx|{mes}|{ano}|rnd`╟ [🝂] 𝙊𝙬𝙣𝙚𝙧𝙨 : @straiker & @DiegoAkk◆ ▬▬▬▬▬ ❴✪❵ ▬▬▬▬▬ ◆
+◆ ▬▬▬▬▬ ❴✪❵ ▬▬▬▬▬ ◆                                      ╟ 点 𝚂𝚌𝚛𝚊𝚙𝚙𝚎𝚛 Codex 点◆ ▬▬▬▬▬ ❴✪❵ ▬▬▬▬▬ ◆╟ [🝂] 𝗟𝗶𝘃𝗲 🟢:╟ — `{cc}|{mes}|{ano}|{cvv}`╟ [🝂] 𝗜𝗻𝗳𝗼 :╟ 🔎 {bin_json['brand']} - {bin_json['type']} - {bin_json['level']}╟ 🏦 `{bin_json['bank']}`╟ 🌐 `{bin_json['country']} - {bin_json['code']} - {bin_json['flag']}`◆ ▬▬▬▬▬ ❴✪❵ ▬▬▬▬▬ ◆╟ [🝂] 𝗘𝘅𝘁𝗿𝗮 : `{extra}xxxx|{mes}|{ano}|rnd`╟ [🝂] 𝙊𝙬𝙣𝙚𝙧𝙨 : @DiegoAkk◆ ▬▬▬▬▬ ❴✪❵ ▬▬▬▬▬ ◆
     
 '''
 
